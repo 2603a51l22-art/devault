@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project Showcase Portal (Legacy Prototype)</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #6366f1;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg-color);
+      color: var(--text);
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 { margin-bottom: 0.5rem; color: #818cf8; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: #312e81;
+      color: #c7d2fe;
+    }
+    .tags {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .tag {
+      font-size: 0.7rem;
+      background: rgba(255,255,255,0.06);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Project Showcase Portal</h1>
+    <p>Discover student and developer mini projects across multiple domains.</p>
+  </header>
+  <div class="grid" id="projectGrid">
+    <!-- Legacy Starter Projects -->
+    <div class="card">
+      <span class="badge">Web Dev</span>
+      <h3>DevCanvas Pro</h3>
+      <p>Interactive web-based whiteboard with collaborative real-time sync.</p>
+      <div class="tags"><span class="tag">React</span><span class="tag">WebSockets</span><span class="tag">Canvas</span></div>
+    </div>
+    <div class="card">
+      <span class="badge">AI/ML</span>
+      <h3>NeuroVision Edge</h3>
+      <p>Low-latency object detection on edge devices with visual telemetry.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">FastAPI</span></div>
+    </div>
+    <div class="card">
+      <span class="badge">Cybersecurity</span>
+      <h3>SentinellDDoS</h3>
+      <p>Real-time packet inspection and anomaly scoring dashboard.</p>
+      <div class="tags"><span class="tag">Go</span><span class="tag">eBPF</span><span class="tag">Grafana</span></div>
+    </div>
+  </div>
+</body>
+</html>
